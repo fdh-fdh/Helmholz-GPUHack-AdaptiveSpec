@@ -366,5 +366,4 @@ Next steps:
 ---
 
 ## License
-
-TBD.
+MIT License
