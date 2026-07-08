@@ -1,19 +1,11 @@
-backend: vllm
+model_name: Qwen/Qwen2.5-7B-Instruct
 
-target_model:
-  name: meta-llama/Llama-3.1-8B-Instruct
-  dtype: float16
-  tensor_parallel_size: 1
-  gpu_memory_utilization: 0.90
-  trust_remote_code: false
+role: target
 
-generation:
-  temperature: 0.0
-  top_p: 1.0
-  max_output_tokens: 128
+dtype: float16
 
-benchmark:
-  prompt_file: prompts/smoke_prompts.jsonl
-  num_warmup_runs: 1
-  num_measured_runs: 3
-  output_csv: results/baseline_target_only.csv
+max_model_len: 4096
+
+gpu_memory_utilization: 0.90
+
+port: 8000
