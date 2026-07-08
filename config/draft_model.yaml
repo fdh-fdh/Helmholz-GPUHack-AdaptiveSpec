@@ -1,0 +1,9 @@
+draft_model:
+  name: meta-llama/Llama-3.2-1B-Instruct
+  dtype: float16
+  precision_label: fp16
+  num_speculative_tokens: 5
+  trust_remote_code: false
+
+benchmark:
+  output_csv: results/baseline_spec_decode.csv

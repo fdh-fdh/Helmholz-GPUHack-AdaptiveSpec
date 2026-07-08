@@ -1,0 +1,19 @@
+backend: vllm
+
+target_model:
+  name: meta-llama/Llama-3.1-8B-Instruct
+  dtype: float16
+  tensor_parallel_size: 1
+  gpu_memory_utilization: 0.90
+  trust_remote_code: false
+
+generation:
+  temperature: 0.0
+  top_p: 1.0
+  max_output_tokens: 128
+
+benchmark:
+  prompt_file: prompts/smoke_prompts.jsonl
+  num_warmup_runs: 1
+  num_measured_runs: 3
+  output_csv: results/baseline_target_only.csv

@@ -1,0 +1,5 @@
+{"prompt_id":"short_fact_001","category":"short_factual","prompt":"Explain speculative decoding for language model inference in three concise sentences.","max_output_tokens":96}
+{"prompt_id":"reasoning_001","category":"reasoning","prompt":"A GPU benchmark improves from 42 tokens/s to 57 tokens/s. Compute the percentage speedup and explain what this means for inference throughput.","max_output_tokens":128}
+{"prompt_id":"code_001","category":"code","prompt":"Write a small Python function that computes time per output token from total latency and number of generated tokens.","max_output_tokens":128}
+{"prompt_id":"summary_001","category":"summarization","prompt":"Summarize why lower precision draft models may both help and hurt speculative decoding performance.","max_output_tokens":128}
+{"prompt_id":"systems_001","category":"gpu_systems","prompt":"List the GPU profiling signals you would inspect to decide whether LLM decoding is compute-bound or memory-bound.","max_output_tokens":128}

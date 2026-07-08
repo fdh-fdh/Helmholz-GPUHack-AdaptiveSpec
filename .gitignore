@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Experiment outputs
+result/*
+results/*
+outputs/
+runs/
+logs/
+checkpoints/
+artifacts/
+wandb/
+mlruns/
+ray_results/
+*.log
+*.csv
+*.jsonl
+!prompts/*.jsonl
+!config/*.yaml
+!config/*.yml
+!results/
+!results/.gitkeep
+!**/.gitkeep
+
+# Model and dataset artifacts
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+*.ckpt
+*.npz
+*.npy
+*.arrow
+*.parquet
+*.h5
+*.hdf5
+*.tar
+*.tar.gz
+*.zip
+
+# GPU / profiling artifacts
+*.nsys-rep
+*.qdrep
+*.sqlite
+*.nvvp
+profile/
+profiles/
+
+# HPC scheduler outputs
+slurm-*.out
+*.out
+*.err
+
+# IDE and OS files
+.DS_Store
+.idea/
+.vscode/
